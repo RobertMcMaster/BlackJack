@@ -14,7 +14,8 @@ public void greeting(String name) {
 }
 
 public void askCash() {
-    System.out.println("How much cash do you want to start with?");
+    System.out.println("How much cash do you want to start with?" +
+      " Please do not enter a number greater then or equal to 1 billion.");
 }
 
 public void tellCashStart(int cash) {
