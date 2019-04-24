@@ -3,6 +3,8 @@ import java.util.*;
 public class BlackJackGame {
 
 public static void main(String[] args) {
+
+  Long startTime1 = System.nanoTime();
     Output output = new Output();
     Input input = new Input(output);
     output.askName();
@@ -111,5 +113,8 @@ public static void main(String[] args) {
         output.cashTotalZero(user.getCash());
     }
     output.cashTotal(user.getCash());
+    Long endTime1 = System.nanoTime();
+    Long runTime1 = endTime1 - startTime1;
+    System.out.println("The run time for this game of blackjack in nanoseconds is " + runTime1);
 }
 }
