@@ -3,9 +3,9 @@ import java.util.*;
 class Card {
 private final int rank;
 private final int suit;
-private static String[] ranks = { "Joker", "Ace", "Two", "Three", "Four",
-        "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack", "Queen",
-        "King" };
+private static String[] ranks = { "Joker", "Ace (1 or 11)", "Two", "Three", "Four",
+        "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Jack (10)", "Queen (10)",
+        "King (10)" };
 private static String[] suits = { "Clubs", "Diamonds", "Hearts", "Spades" };
 
 Card(int suit, int values) {
