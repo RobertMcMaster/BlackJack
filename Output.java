@@ -41,6 +41,7 @@ public void showBet(int bet) {
 public void showHand(User user) {
     System.out.println("Here is your hand: ");
     System.out.println(user.getHand(1));
+    System.out.println("Total Hand value: " + user.getHand(1).getHandValue());
 }
 
 public void showDealerFirstCard(Dealer dealer) {
