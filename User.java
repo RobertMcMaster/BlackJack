@@ -1,4 +1,6 @@
+// Calls in java utilities.
 import java.util.*;
+// Calls in java arrays.
 import java.util.Arrays;
 
 class User extends Player {
