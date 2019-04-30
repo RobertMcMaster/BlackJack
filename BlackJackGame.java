@@ -2,7 +2,7 @@
 import java.util.*;
 // Creates BlackJackGame class.
 public class BlackJackGame {
-// Creates string metthod.
+// Reads in output from the other methods to determine the flow of actions.
 public static void main(String[] args) {
 
   Long startTime1 = System.nanoTime();
