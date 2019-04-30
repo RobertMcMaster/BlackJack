@@ -1,9 +1,9 @@
-
+// Calls in java utility.
 import java.util.*;
-
+// Creates Deck class.
 class Deck {
 private ArrayList<Card> deck;
-
+// Sets up Deck array.
 Deck() {
     deck = new ArrayList<Card>();
     for (int i = 0; i < 4; i++) {
@@ -12,7 +12,7 @@ Deck() {
         }
     }
 }
-
+// Creates shuffle method.
 public void shuffle() {
     Random random = new Random();
     Card temp;
@@ -24,7 +24,7 @@ public void shuffle() {
         deck.set(index1, temp);
     }
 }
-
+// Creates shuffle method.
 public Card drawCard() {
     return deck.remove(0);
 }
