@@ -1,7 +1,8 @@
+// Calls in Java utility.
 import java.util.*;
-
+// Creates BlackJackGame class.
 public class BlackJackGame {
-
+// Creates string metthod.
 public static void main(String[] args) {
 
   Long startTime1 = System.nanoTime();
