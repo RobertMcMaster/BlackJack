@@ -25,13 +25,13 @@ Hand(Deck deck) {
         }
     }
 }
-
+// adds newly drawn card to hand for user
 public void Hit(Deck deck) {
     hand.add(deck.drawCard());
     Card[] aHand = new Card[]{};
     aHand = hand.toArray(aHand);
     handValue = 0;
-    aceCounter=0;
+    aceCounter = 0;
     for (int i = 0; i < aHand.length; i++) {
         handValue += aHand[i].getValue();
         if (aHand[i].getValue() == 11) {
@@ -43,11 +43,11 @@ public void Hit(Deck deck) {
         }
     }
 }
-
+// retrieves size of hand
 public int getHandSize() {
     return hand.size();
 }
-
+// retrieves values in hand
 public int getHandValue() {
     return handValue;
 }
@@ -57,7 +57,7 @@ public Card getCard(int cardnum) {
     aHand = hand.toArray(aHand);
     return aHand[cardnum-1];
 }
-
+// displays hand to user in form of a string
 public String toString(){
     String hands ="";
     Card[] aHand = new Card[]{};
